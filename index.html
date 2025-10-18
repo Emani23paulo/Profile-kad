@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card | Okon Emmanuel</title>
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <article class="profile-card" data-testid="test-profile-card">
+        <header>
+          <h2 data-testid="test-user-name">Okon Emmanuel</h2>
+          <p class="role">Frontend Developer</p>
+        </header>
+
+        <figure class="avatar">
+          <img
+            src="img/Okon.jpg"
+            alt="Portrait of Okon Emmanuel"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <p class="bio" data-testid="test-user-bio">
+          I’m a passionate Frontend Developer dedicated to building intuitive,
+          responsive, and high-performing web experiences. I love crafting
+          elegant interfaces with clean, maintainable code.
+        </p>
+
+        <div class="timestamp">
+          <span class="label">Current Time (ms): </span>
+          <span data-testid="test-user-time" id="milliseconds"></span>
+        </div>
+
+        <nav
+          class="social-links"
+          data-testid="test-user-social-links"
+          aria-label="Social Links"
+        >
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com/emani23_"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+              >
+                <i class="fa-brands fa-x-twitter"></i> Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/emani23paulo"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-instagram"
+              >
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/emani023/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="list-section" data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Coding</li>
+            <li>Designing</li>
+            <li>Football</li>
+          </ul>
+        </section>
+
+        <section class="list-section" data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Slow Wi-Fi</li>
+            <li>Messy code</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
